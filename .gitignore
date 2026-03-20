@@ -140,3 +140,5 @@ media/
 .DS_Store
 
 *.sqlite3
+
+node_modules/

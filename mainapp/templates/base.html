@@ -1,12 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}gw test{% endblock %}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}GW Test{% endblock %}</title>
+
+  <link rel="stylesheet" href="{% static 'css/output.css' %}?v=4">
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+  {% block content %}{% endblock %}
+
+  <script defer src="{% static 'js/main.js' %}?v=4"></script>
 </body>
 </html>

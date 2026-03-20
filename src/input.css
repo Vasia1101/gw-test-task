@@ -1,0 +1,39 @@
+@import "tailwindcss" source(none);
+@source "../mainapp/templates";
+@source "../mainapp/static/js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#f6f3ef] text-neutral-900;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .icon-btn {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white transition duration-300 hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold tracking-tight sm:text-3xl;
+  }
+
+  .product-card {
+    @apply rounded-3xl border border-neutral-200 bg-white p-3 transition duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .tab-btn {
+    @apply rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm font-medium transition duration-300 hover:border-neutral-400;
+  }
+
+  .tab-btn.active {
+    @apply bg-neutral-900 text-white shadow-md border-neutral-900;
+  }
+}

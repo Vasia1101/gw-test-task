@@ -35,3 +35,29 @@
 
 - `GET /` - Головна сторінка
 - `GET /search/?query=<запит>` - Пошук продуктів
+
+
+# GW Test Task
+
+## Features
+- Responsive page built with Django Templates and Tailwind CSS
+- Data for slider, categories, and products rendered from backend views
+- Hardcoded navigation menu
+- Debounced server-side product search using existing backend API
+- Favorites with localStorage persistence
+- Hero slider with autoplay and manual navigation
+- Product tabs filtering with animated transitions
+- Mobile menu and mobile search
+- Smooth UI animations and hover effects
+
+## Tech Stack
+- Django
+- Django Templates
+- JavaScript
+- Tailwind CSS (without CDN)
+
+## Run project
+1. Create virtual environment
+2. Install Python dependencies
+3. Start Django server
+4. Run Tailwind CLI build/watch
